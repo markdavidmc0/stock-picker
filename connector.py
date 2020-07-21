@@ -9,7 +9,7 @@ class Fetcher:
 
     def download_end_of_day(self):
         """Download end of day stock data object."""
-        payload = {'access_key': '0ca9e3268525dc676972e5c9b05047cf', 'symbols': 'AAPL'}
+        payload = {'access_key': '', 'symbols': 'AAPL'}
         output = requests.get('http://api.marketstack.com/v1/eod', params=payload)
         return output
     
